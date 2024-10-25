@@ -1,0 +1,24 @@
+# lance
+weapon:
+  weaponCode: "WPN010"
+  actionList:
+    - id: "010001"
+      name: "zhici1"
+      hits: 1
+      hitDataList:
+        - physicalValue: 23.0
+          elementCorrection: 1.1
+    - id: "010002"
+      name: "zhici2"
+      hits: 1
+      hitDataList:
+        - physicalValue: 23.0
+          elementCorrection: 1.1
+    - id: "010003"
+      name: "zhici3"
+      hits: 1
+      hitDataList:
+        - physicalValue: 29.0
+          elementCorrection: 1.3
+
+
