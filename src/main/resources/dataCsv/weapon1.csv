@@ -1,6 +1,5 @@
 weaponCode, actionId, actionName, hits, hitData_physicalValue, hitData_elementCorrection, maxFrame, minFrame
-weapon1, action1, Slash, 10, 120.5, 15.3, 30, 5
-weapon1, action1, Slash, 130, 16.0, 30, 5, 2
-weapon1, action2, Stab, 5, 100.0, 10.0, 20, 2
-weapon2, action1, Fireball, 20, 150.5, 18.3, 40, 10
-weapon2, action2, Fireball, 160, 20.0, 40, 10, 2
+weapon1, action1, Slash, 1, 120.5, 15.3, 30, 5
+weapon1, action1, Slash, 1, 16.0, 30, 5, 2
+weapon1, action2, Slash, 1, 46, 1, 30, 10
+weapon1, action3, Slash, 1, 90, 2, 5, 120

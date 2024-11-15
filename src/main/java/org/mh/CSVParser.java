@@ -21,7 +21,6 @@ public class CSVParser {
       reader.readNext(); // Skip header row
 
       while ((nextLine = reader.readNext()) != null) {
-
         // 检查每行的列数是否符合要求
         if (nextLine.length < 8) {
           System.out.println("Skipping row with insufficient columns: " + Arrays.toString(nextLine));
@@ -57,9 +56,12 @@ public class CSVParser {
           action.setMinFrame(minFrame);
           action.setHitDataList(new ArrayList<>());
           actionMap.put(actionId, action);
+        } else {
+          // 如果 Action 已存在，累加 hits
+          action.setHits(action.getHits() + hits);
         }
 
-        // 为每个 hit 创建一个 HitData 对象
+        // 将当前行的 HitData 添加到 Action 的 hitDataList 中
         for (int i = 0; i < hits; i++) {
           HitData hitData = new HitData();
           hitData.setPhysicalValue(physicalValue); // 每个 hit 的 physicalValue
