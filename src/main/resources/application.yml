@@ -1,2 +1,2 @@
-weapons:
-  lance:
+# application.yml
+spring:
