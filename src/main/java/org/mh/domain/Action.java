@@ -20,4 +20,8 @@ public class Action {
 
   private List<HitData> hitDataList;
 
+  private int maxFrame;
+
+  private int minFrame;
+
 }
